@@ -1,10 +1,12 @@
 import Navbar from "../navbar/Navbar";
 import './header.css';
 
-const Header = () => {
+const Header = ({categories}) => {
    return (
       <header className="header">
-         <Navbar />
+         <div className="container">
+            <Navbar categories={categories}/>
+         </div>
       </header>
    );
 }
